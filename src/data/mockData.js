@@ -143,31 +143,25 @@ export const FRAMEWORK_DATA = [
   {
     id: "framework_1",
     image: Images.framework1,
-    title: "Requirements Management",
+    title: "Robust Multi-Database Support",
     description:
-      "Track project progress, health, risks, and status. Log feedback, and monitor scope creep to ensure stakeholders are always informed, providing a clear and up-to-date understanding of the project's status for effective decision-making and smoother execution.",
+      "ServiceQuery offers comprehensive compatibility with leading SQL and NoSQL databases, including Azure Data Tables, Cosmos DB, SQL Server, and MongoDB. This flexibility allows seamless integration across various data ecosystems, ensuring consistent and efficient querying capabilities, regardless of the database technology in use.",
   },
   {
     id: "framework_2",
     image: Images.framework2,
-    title: "Automatic BPMN 2.0 Generation",
+    title: " Enhanced Security with Built-In Protection",
     description:
-      "Leverage intuitive AI to create Process Maps, User Journeys, and flows automatically. Generate diagrams for each feature effortlessly, eliminating the need for manual layout and streamlining the visualization process.",
+      "With ServiceQuery, security is paramount. The library eliminates the threat of SQL injection attacks by constructing queries with individually mapped functions, ensuring data protection through secure, pre-validated LINQ expressions. This guarantees secure data operations without compromising performance.",
   },
   {
     id: "framework_3",
     image: Images.framework3,
-    title: "Test Automation",
+    title: "Advanced Dynamic Querying for Front-End Flexibility",
     description:
-      "Simplify the creation of Acceptance Criteria and execution of automated test scripts. Track testing progress and eliminate the need for manual testing, enhancing efficiency and accuracy in the testing process.",
+      "ServiceQuery enables powerful dynamic querying, allowing front-end applications to interact with backend data through a standardized API. This feature simplifies data access, providing the agility to build complex queries on the fly, improving operational efficiency and reducing development complexity.",
   },
-  {
-    id: "framework_4",
-    image: Images.framework4,
-    title: "Integrate into your existing ecosystem",
-    description:
-      "Integrate into your existing ecosystem seamlessly by syncing Reqops with tools like Jira, Azure, and Asana. Continue using your preferred tools while Reqops creates and manages your tickets, saving you the time and effort of manual ticket creation.",
-  },
+  
 ];
 
 

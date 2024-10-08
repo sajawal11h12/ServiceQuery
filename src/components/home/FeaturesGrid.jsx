@@ -2,6 +2,8 @@ import { FEATURES_GRID_DATA } from "../../data/mockData";
 import useGradientUpdater from "../../hooks/useGradientUpdater";
 import { motion } from "framer-motion";
 
+
+
 const FeaturesGrid = () => {
   const gradientRefs = useGradientUpdater();
 
@@ -98,6 +100,15 @@ const FeaturesGrid = () => {
           )}
         </div>
       </div>
+
+
+
+
+
+
+
+
+
     </section>
   );
 };
