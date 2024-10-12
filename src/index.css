@@ -11,3 +11,17 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  
+  }
+  html {
+    scroll-behavior: smooth;
+  }

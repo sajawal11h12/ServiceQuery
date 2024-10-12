@@ -14,6 +14,7 @@ import curve2 from "./icons/curve2.svg"; // Add curve2
 export const Icons = {
   code,
   communication,
+  
   logo,
   project_cord,
   quality_assur,
@@ -23,5 +24,6 @@ export const Icons = {
   storage,
   strategic_align,
   curve1, // Export curve1
-  curve2, // Export curve2
+  curve2,
+   // Export curve2
 };

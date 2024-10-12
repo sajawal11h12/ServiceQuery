@@ -9,6 +9,8 @@ import postsqlicon from '../assets/images/postsqlicon.png'
 import sqlservericon from '../assets/images/sqlservericon.png'
 import sqllite from '../assets/images/sqllite.png'
 import inmemory from '../assets/images/inmemory.png'
+import check from '../assets/images/check.png'
+import user_stories from '../assets/images/user_stories.jpg'
 
 
 export const FEATURES_DATA = [
@@ -44,7 +46,7 @@ export const FEATURES_GRID_DATA = [
   {
     id: "feat_grid_2",
     title: "Evolve Your Data Querying Capabilities",
-    description: "View all of our pre-built, open-source examples for the most popular database engines today!",
+    description: " Use our open-source examples to quickly implement solutions for popular databases.",
     image: Images.user_stories,
   },
   /*{
@@ -244,3 +246,142 @@ export const collabApps = [
 ];
 
 
+
+
+export const benefits = [
+  {
+    id: "0",
+    title: "REST API Services",
+    text: "Templated, repository-based services for quickly exposing standard CRUD methods or custom methods.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "1",
+    title: "ServiceQuery",
+    text: "Supports standardized, polyglot data querying for SQL and NoSQL databases.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+    light: true,
+  },
+  {
+    id: "2",
+    title: "Business Rule Engine",
+    text: "Business Rule Engine: Polymorphic techniques to build reusable business logic.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "3",
+    title: "Domain-Driven Design",
+    text: "Domain-Driven Design concepts, standards and patterns.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Event-Driven Architecture",
+    text: "Customize business logic for any supported object and method.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "5",
+    title: "Classic or Modern API Design",
+    text: "Choose between Classic or Modern modes, with various response formats.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "6",
+    title: "Microservices Architecture",
+    text: "Break down applications into smaller, manageable services that can be developed and deployed independently.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "7",
+    title: "Classic or Modern API Design ",
+    text: "Choose between Classic or Modern modes, with various response formats.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+    light: true,
+  },
+  {
+    id: "8",
+    title: " Background Processing",
+    text: "Supports asynchronous processes, tasks, and rules.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "9",
+    title: "SQL and NoSQL Database Support",
+    text: "Works standard with relational (SQL) and document (NoSQL) database engines.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+    light: true,
+  },
+  {
+    id: "10",
+    title: "Service Bus Engine",
+    text: "Supports broadcasts of system data with InMemory and Azure Service Bus.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+  },
+  {
+    id: "11",
+    title: " NuGet Packages",
+    text: "Quickly build new services and applications.",
+    backgroundUrl: {check},
+    iconUrl: check,
+    imageUrl: user_stories,
+    light: true,
+  },
+];
+
+
+// export const socials = [
+//   {
+//     id: "0",
+//     title: "Discord",
+//     iconUrl: discordBlack,
+//     url: "#",
+//   },
+//   {
+//     id: "1",
+//     title: "Twitter",
+//     iconUrl: twitter,
+//     url: "#",
+//   },
+//   {
+//     id: "2",
+//     title: "Instagram",
+//     iconUrl: instagram,
+//     url: "#",
+//   },
+//   {
+//     id: "3",
+//     title: "Telegram",
+//     iconUrl: telegram,
+//     url: "#",
+//   },
+//   {
+//     id: "4",
+//     title: "Facebook",
+//     iconUrl: facebook,
+//     url: "#",
+//   },
+// ];

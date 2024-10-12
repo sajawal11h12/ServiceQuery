@@ -2,12 +2,11 @@ import { FEATURES_DATA } from "../../data/mockData";
 import { motion } from "framer-motion";
 import useGradientUpdater from "../../hooks/useGradientUpdater";
 import { GradientLight } from "../../Gradlight";
-import check from '../../assets/icons/check.svg'
-import { collabContent ,collabApps,collabText} from "../../data/mockData";
-import Button from '../../button'
-import { LeftCurve,RightCurve } from "../../collaborationscurve";
-import brickslogomini from '../../assets/images/brickslogomini.png'
-import {Link} from 'react-router-dom';
+import logos from '../../assets/images/logos.png'
+import check from '../../assets/images/check.png'
+import { Gradient } from "../../Gradient";
+import curve1 from '../../assets/icons/curve1.svg'
+import Button from "../../button";
 
 const Features = () => {
   const gradientRefs = useGradientUpdater();
@@ -41,7 +40,7 @@ const Features = () => {
                   scale: 1.05,
                 }}
               >
-                {/* Gradient effect */}
+                {/* GradientLight effect for each card */}
                 <div className="absolute inset-0 z-0">
                   <GradientLight />
                 </div>
@@ -67,20 +66,75 @@ const Features = () => {
         </div>
       </div>
 
+      {/* Additional Section with Gradient Effects */}
+      <section className="mt-24 border border-gray-700 p-12 md:p-32 flex flex-col md:flex-row justify-between items-start">
+        <div className="md:w-1/2 w-full">
+          <h4 className="mb-9 text-white text-3xl">
+            Relational and Document<br />Database Engine Support
+          </h4>
+          <div className="text-white space-y-6">
+            <p className="flex items-center">
+              <img src={check} alt="Check" className="mr-3 w-5 h-5 filter hue-rotate-260" />
+              <span className="relative inline-block">
+                Seamless multi-database compatibility with SQL Server, MongoDB, PostgreSQL, and more.
+                <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+              </span>
+            </p>
+            <div className="w-full border-b border-gray-700" />
+            
+            <p className="flex items-center">
+              <img src={check} alt="Check" className="mr-3 w-5 h-5 filter hue-rotate-260" />
+              <span className="relative inline-block">
+                Effortless scalability for lightweight databases like SQLite to enterprise systems.
+                <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+              </span>
+            </p>
+            <div className="w-full border-b border-gray-700" />
+            
+            <p className="flex items-center">
+              <img src={check} alt="Check" className="mr-3 w-5 h-5 filter hue-rotate-260" />
+              <span className="relative inline-block">
+                Hybrid data management combines the strengths of relational and document databases.
+                <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+              </span>
+            </p>
+            <div className="w-full border-b border-gray-700" />
+            
+            <p className="flex items-center">
+              <img src={check} alt="Check" className="mr-3 w-5 h-5 filter hue-rotate-260" />
+              <span className="relative inline-block">
+                Future-ready integration with modern platforms like Cosmos DB and Azure Data Tables.
+                <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+              </span>
+            </p>
+            <div className="w-full border-b border-gray-700" />
+            
+            <p className="flex items-center">
+              <img src={check} alt="Check" className="mr-3 w-5 h-5 filter hue-rotate-260" />
+              <span className="relative inline-block">
+                Unified query interface simplifies development across diverse database engines.
+                <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+              </span>
+            </p>
+            <div className="w-full border-b border-gray-700" />
+          </div>
+          <Button className='text-white mt-10 ml-52'>Get Started</Button>
+        </div>
 
- 
+        {/* Logos and Information */}
+        <div className="md:w-1/2 w-full flex flex-col items-center mt-12 md:mt-0">
+          <p className="text-white mb-3 text-center md:text-left">
+            ServiceQuery is FREE to use for commercial purposes.<br/> It is available under the MIT license.
+          </p>
+         
+          <img src={logos} alt="Logos" className="mt-6 max-w-full h-auto" />
+          <img className="   mr-[300px] mt-12" src={curve1} alt=""/>
+        </div>
+      </section>
 
-
-
-
-
+      {/* Add main Gradient component for the overall section */}
+      <Gradient />
     </section>
-
-
-
-
-
-  
   );
 };
 
