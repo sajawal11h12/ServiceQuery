@@ -23,7 +23,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section className="px-4 lg:py-[65px]" data-aos="fade-up"> {/* AOS added to full section */}
+    <section className="px-4  lg:py-[65px]" data-aos="fade-up"> {/* AOS added to full section */}
       <div className="max-w-[1200px] mx-auto" data-aos="fade-up">
         <h3 className="text-center text-white font-montserrat lg:text-xl md:text-lg text-base font-semibold">
           Why Use ServiceQuery?
