@@ -15,8 +15,7 @@ const HomeScreen = () => {
   return (
     <div className="overflow-x-hidden">
      <Header/>
-      <Heropage/>
-      {/* <Featurepage/> */}
+      <Heropage/>  
       <Features />
       <FeaturesGrid />
       <UpliftDelivery />
@@ -24,6 +23,7 @@ const HomeScreen = () => {
       <Framework />
       <ProcessMap />
       <JoinUs />
+      <Footer />
       
       
     </div>

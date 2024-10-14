@@ -12,7 +12,7 @@ const UpliftDelivery = () => {
         </h3>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 xxl:gap-10 xl:gap-8 lg:gap-6 gap-4 lg:mt-10 md:mt-8 mt-6">
           {UPLIFT_DELIVERY_DATA?.map(
-            ({ id, title, icon, description }, index) => {
+            ({ id, title, Icon, description }, index) => {
               return ( 
                 <motion.div
                   key={id}
@@ -35,11 +35,11 @@ const UpliftDelivery = () => {
                   }}
                 >
                   <div className="rounded-3xl bg-jet flex flex-col items-start h-full lg:p-8 md:p-6 p-4">
-                    <img className="w-12" src={icon} alt="" />
-                    <h4 className="lg:text-xl md:text-lg text-base text-white font-montserrat font-semibold mt-5 mb-4">
+                    <img className="w-12" src={Icon} alt="" />
+                    <h4 className="lg:text-2xl md:text-lg text-base text-white font-montserrat font-semibold mt-5 mb-4">
                       {title }
                     </h4>
-                    <p className="lg:text-base text-sm font-source-sans text-white">
+                    <p className="lg:text-lg text-sm font-source-sans text-white">
                       {description}
                     </p>
                   </div>

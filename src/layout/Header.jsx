@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header className="top-0">
       <div
-        className={`max-w-[1320px] px-4 flex items-center justify-between py-[30px] mx-auto h-9 w-full fixed top-0 z-50 transition-all duration-300 ease-in-out ${
+        className={`max-w-full px-8 flex items-center justify-between py-[30px] mx-auto h-9 w-full fixed top-0 z-50 transition-all duration-300 ease-in-out ${
           isScrolled ? 'bg-[#0e0c15e0] shadow-lg py-3' : 'bg-transparent py-6'
         }`}
       >
@@ -74,7 +74,7 @@ const Header = () => {
     Features
   </Link>
   <Link
-    to=""
+     to={routesConstants.GET_STARTED}
     className="ml-10 text-white text-base font-source-sans hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
   >
     Get Started

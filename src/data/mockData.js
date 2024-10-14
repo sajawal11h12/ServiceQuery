@@ -1,18 +1,31 @@
 import { Icons } from "../assets/icons";
 import {Images} from '../assets/images.js';
-import sql from '../assets/images/sql.png'
-import comosicon from '../assets/images/comosicon.png'
-import storageicon from '../assets/images/storageicon.png'
-import mongodbicon from '../assets/images/mongodbicon.png'
-import netcoreicon from '../assets/images/netcoreicon.png'
-import postsqlicon from '../assets/images/postsqlicon.png'
-import sqlservericon from '../assets/images/sqlservericon.png'
-import sqllite from '../assets/images/sqllite.png'
-import inmemory from '../assets/images/inmemory.png'
-import check from '../assets/images/check.png'
-import user_stories from '../assets/images/user_stories.jpg'
 
-
+import efficent from '../assets/images/efficent.png'
+import tracing1 from '../assets/images/tracing1.png'
+import operation from '../assets/images/operation.png'
+ import check from '../assets/images/check.png'
+// import user_stories from '../assets/images/user_stories.jpg'
+import database from '../assets/externalimages/database.png'
+import js from '../assets/externalimages/js.png'
+import query from '../assets/externalimages/query.png'
+import security from '../assets/externalimages/security.png'
+import documentation from '../assets/externalimages/documentation.png'
+import construction from '../assets/externalimages/construction.png'
+import fun1 from '../assets/externalimages/fun1.png'
+import fun2 from '../assets/externalimages/fun2.png'
+import fun3 from '../assets/externalimages/fun3.png'
+import fun4 from '../assets/externalimages/fun4.png'
+import pagging from '../assets/externalimages/pagging.png'
+import select from '../assets/externalimages/select.png'
+import secure from '../assets/externalimages/secure.png'
+import support from '../assets/externalimages/support.png'
+import sort from '../assets/externalimages/sort.png'
+import board from '../assets/externalimages/board.png'
+import example from '../assets/externalimages/example.png'
+import server from '../assets/externalimages/server.png'
+import sorce from '../assets/externalimages/source.png'
+import ai from '../assets/externalimages/ai.png'
 export const FEATURES_DATA = [
   {
     id: "feat_1",
@@ -72,29 +85,30 @@ export const FEATURES_GRID_DATA = [
   },*/
 ];
 
+
+
 export const UPLIFT_DELIVERY_DATA = [
   {
-    id: "uplift_1",
-    icon: Icons.storage,
-    title: "Versatile Database Compatibility",
-    description:
-      "ServiceQuery integrates effortlessly with SQL and NoSQL databases, including SQL Server, PostgreSQL, and Oracle, allowing you to select the perfect engine for your needs.",
+    id: 1,
+    title: "Streamlined Operations",
+    Icon: operation, 
+    description: "Optimize delivery operations with real-time data insights.",
   },
   {
-    id: "uplift_2",
-    icon: Icons.spiral,
-    title: "Harness the Power of NoSQL",
-    description:
-      " Utilize NoSQL databases like MongoDB and Cosmos DB for dynamic data models and enhanced performance, enabling you to build scalable modern applications.",
+    id: 2,
+    title: "Enhanced Tracking",
+    Icon: tracing1,
+    description: "Improve tracking with comprehensive logistics data.",
   },
   {
-    id: "uplift_3",
-    icon: Icons.code,
-    title: "Comprehensive Data Solutions",
-    description:
-      "With support for relational databases like MySQL and SQLite, as well as Azure Data Tables, ServiceQuery simplifies data management and empowers sophisticated application development.",
+    id: 3,
+    title: "Efficient Routing",
+    Icon: efficent,
+    description: "Ensure the fastest delivery routes to save time.",
+  
   },
 ];
+
 
 export const COLLECTIVE_DELIVERY_DATA = [
   {
@@ -186,56 +200,56 @@ export const collabContent = [
   },
 ];
 
-export const collabApps = [
-  {
-    id: "0",
-    title: "Figma",
-    icon: sql,
-    width: 26,
-    height: 36,
-  },
-  {
-    id: "1",
-    title: "Notion",
-    icon: comosicon,
-    width: 34,
-    height: 36,
-  },
-  {
-    id: "2",
-    title: "Discord",
-    icon: storageicon,
-    width: 36,
-    height: 28,
-  },
-  {
-    id: "3",
-    title: "Slack",
-    icon: mongodbicon,
-    width: 34,
-    height: 35,
-  },
-  {
-    id: "4",
-    title: "netcoreicon",
-    icon: netcoreicon,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "5",
-    title: "Protopie",
-    icon: inmemory,
-    width: 34,
-    height: 34,
-  },
-  {
-    id: "6",
-    title: "Framer",
-    icon: sqllite,
-    width: 26,
-    height: 34,
-  },
+// export const collabApps = [
+//   {
+//     id: "0",
+//     title: "Figma",
+//     icon: sql,
+//     width: 26,
+//     height: 36,
+//   },
+//   {
+//     id: "1",
+//     title: "Notion",
+//     icon: comosicon,
+//     width: 34,
+//     height: 36,
+//   },
+//   {
+//     id: "2",
+//     title: "Discord",
+//     icon: storageicon,
+//     width: 36,
+//     height: 28,
+//   },
+//   {
+//     id: "3",
+//     title: "Slack",
+//     icon: mongodbicon,
+//     width: 34,
+//     height: 35,
+//   },
+//   {
+//     id: "4",
+//     title: "netcoreicon",
+//     icon: netcoreicon,
+//     width: 34,
+//     height: 34,
+//   },
+//   {
+//     id: "5",
+//     title: "Protopie",
+//     icon: inmemory,
+//     width: 34,
+//     height: 34,
+//   },
+//   {
+//     id: "6",
+//     title: "Framer",
+//     icon: sqllite,
+//     width: 26,
+//     height: 34,
+//   },
   // {
   //   id: "7",
   //   title: "Raindrop",
@@ -243,7 +257,9 @@ export const collabApps = [
   //   width: 38,
   //   height: 32,
   // },
-];
+// ];
+
+
 
 
 
@@ -251,137 +267,159 @@ export const collabApps = [
 export const benefits = [
   {
     id: "0",
-    title: "REST API Services",
-    text: "Templated, repository-based services for quickly exposing standard CRUD methods or custom methods.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: " Database Support",
+    text: "Seamlessly supports popular SQL and NoSQL databases including Azure Data Tables, Cosmos DB, MongoDB, MySQL, SQLite, SQL Server, PostgreSQL, and Oracle.",
+    backgroundUrl: "./src/assets/externalimages/card-1.svg",
+    iconUrl:database
+   
   },
   {
     id: "1",
-    title: "ServiceQuery",
-    text: "Supports standardized, polyglot data querying for SQL and NoSQL databases.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Security",
+    text: "Eliminates injection attacks by building LINQ expressions using individually mapped functions and parsed data.",
+    backgroundUrl: "./src/assets/externalimages/card-2.svg",
+    iconUrl:security,
     light: true,
   },
   {
     id: "2",
-    title: "Business Rule Engine",
-    text: "Business Rule Engine: Polymorphic techniques to build reusable business logic.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Dynamic Querying",
+    text: "Allows clients and front-end applications to dynamically query data through a standardized endpoint.",
+    backgroundUrl: "./src/assets/externalimages/card-3.svg",
+    iconUrl:query,
   },
   {
     id: "3",
-    title: "Domain-Driven Design",
-    text: "Domain-Driven Design concepts, standards and patterns.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "JavaScript Integration",
+    text: "Easy integration with front-end applications using the ServiceQuery.js JavaScript file for building request queries.",
+    backgroundUrl: "./src/assets/externalimages/card-4.svg",
+    iconUrl:js,
     light: true,
   },
   {
     id: "4",
-    title: "Event-Driven Architecture",
-    text: "Customize business logic for any supported object and method.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Comprehensive Documentation",
+    text: "Detailed documentation covering supported data types, operations, and implementation examples.",
+    backgroundUrl: "./src/assets/externalimages/card-5.svg",
+    iconUrl:documentation,
   },
   {
     id: "5",
-    title: "Classic or Modern API Design",
-    text: "Choose between Classic or Modern modes, with various response formats.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Flexible Query Construction",
+    text: "Construct queries using the ServiceQueryRequestBuilder object, supporting a variety of operations.",
+    backgroundUrl: "./src/assets/externalimages/card-6.svg",
+    iconUrl:construction,
   },
   {
     id: "6",
-    title: "Microservices Architecture",
-    text: "Break down applications into smaller, manageable services that can be developed and deployed independently.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Aggregate Functions",
+    text: "Includes support for average, count, maximum, minimum, and sum functions.",
+    backgroundUrl: "./src/assets/externalimages/card-1.svg",
+    iconUrl:fun1,
   },
   {
     id: "7",
-    title: "Classic or Modern API Design ",
-    text: "Choose between Classic or Modern modes, with various response formats.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Advanced Comparison Functions",
+    text: "Supports a wide range of comparison functions for both numeric and string data types.",
+    backgroundUrl: "./src/assets/externalimages/card-2.svg",
+    iconUrl:fun2,
     light: true,
   },
   {
     id: "8",
-    title: " Background Processing",
-    text: "Supports asynchronous processes, tasks, and rules.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Grouping and Logical Functions",
+    text: "Create complex queries using AND, OR, BEGIN, and END grouping functions.",
+    backgroundUrl: "./src/assets/externalimages/card-3.svg",
+    iconUrl:fun3,
   },
   {
     id: "9",
-    title: "SQL and NoSQL Database Support",
-    text: "Works standard with relational (SQL) and document (NoSQL) database engines.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Nullability Functions",
+    text: "Handle null and non-null values effectively in your queries.",
+    backgroundUrl: "./src/assets/externalimages/card-4.svg",
+    iconUrl:fun4,
     light: true,
   },
   {
     id: "10",
-    title: "Service Bus Engine",
-    text: "Supports broadcasts of system data with InMemory and Azure Service Bus.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Paging Functions",
+    text: "Easily implement pagination with page number, page size, and include count functions.",
+    backgroundUrl: "./src/assets/externalimages/card-5.svg",
+    iconUrl:pagging,
   },
   {
     id: "11",
-    title: " NuGet Packages",
-    text: "Quickly build new services and applications.",
-    backgroundUrl: {check},
-    iconUrl: check,
-    imageUrl: user_stories,
+    title: "Selecting Functions",
+    text: "Customize query results by selecting specific properties and using distinct queries.",
+    backgroundUrl: "./src/assets/externalimages/card-6.svg",
+    iconUrl:select,
     light: true,
   },
+  {
+    id: "12",
+    title: "Sorting Functions",
+    text: "Sort results in ascending or descending order.",
+    backgroundUrl: "./src/assets/externalimages/card-1.svg",
+    iconUrl:sort,
+  },
+  {
+    id: "13",
+    title: "Role-Based Security",
+    text: "Restrict properties based on user roles to enhance data security.",
+    backgroundUrl: "./src/assets/externalimages/card-2.svg",
+    iconUrl:secure,
+    light: true,
+  },
+  {
+    id: "14",
+    title: "Sharding Support",
+    text: "Add expressions to queries to target specific data segments for efficient retrieval and security.",
+    backgroundUrl: "./src/assets/externalimages/card-3.svg",
+    iconUrl:support,
+  },
+  {
+    id: "15",
+    title: "Server-Side Customization",
+    text: "Customize server-side query processing with the ServiceQueryOptions object.",
+    backgroundUrl: "./src/assets/externalimages/card-4.svg",
+    iconUrl:server,
+    light: true,
+  },
+  {
+    id: "16",
+    title: "Example Implementations",
+    text: "Explore detailed examples for various database storage providers in the examples folder.",
+    backgroundUrl: "./src/assets/externalimages/card-5.svg",
+    iconUrl:example,
+  },
+  {
+    id: "17",
+    title: "Discussion Board",
+    text: "Join the community discussion board to post questions, share feedback, and collaborate with other users.",
+    backgroundUrl: "./src/assets/externalimages/card-6.svg",
+    iconUrl:board,
+    light: true,
+  },
+  {
+    id: "18",
+    title: "Direct Support",
+    text: "Access direct support via email for any issues or inquiries related to ServiceQuery with our consulting services.",
+    backgroundUrl: "./src/assets/externalimages/card-1.svg",
+    iconUrl:support,
+  },
+  {
+    id: "19",
+    title: "Open Source",
+    text: "ServiceQuery is available under the MIT permissive license, allowing for community contributions and transparency.",
+    backgroundUrl: "./src/assets/externalimages/card-2.svg",
+    iconUrl:sorce,
+    light: true,
+  },
+  {
+    id: "20",
+    title: "Artificial Intelligence",
+    text: "Query your database with simple human text input using OpenAI GPT LLMs.",
+    backgroundUrl: "./src/assets/externalimages/card-3.svg",
+    iconUrl:ai,
+  },
 ];
-
-
-// export const socials = [
-//   {
-//     id: "0",
-//     title: "Discord",
-//     iconUrl: discordBlack,
-//     url: "#",
-//   },
-//   {
-//     id: "1",
-//     title: "Twitter",
-//     iconUrl: twitter,
-//     url: "#",
-//   },
-//   {
-//     id: "2",
-//     title: "Instagram",
-//     iconUrl: instagram,
-//     url: "#",
-//   },
-//   {
-//     id: "3",
-//     title: "Telegram",
-//     iconUrl: telegram,
-//     url: "#",
-//   },
-//   {
-//     id: "4",
-//     title: "Facebook",
-//     iconUrl: facebook,
-//     url: "#",
-//   },
-// ];
