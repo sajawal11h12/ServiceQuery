@@ -9,6 +9,7 @@ import getstartedai from '../../assets/images/getstartedai.jpg';
 import check from '../../assets/images/check.png';
 import { FaCode, FaDatabase, FaRestroom, FaJsSquare } from 'react-icons/fa';
 import Footer from '../../layout/Footer';
+import ScrollToTop from '../../components/Scrolltotop/Scrolltotop';
 
 const Getstarted = () => {
   return (
@@ -284,6 +285,7 @@ request = new ServiceQueryRequestBuilder()
           </pre>
         </div>
       </section>
+      <ScrollToTop/>
       <Footer/>
     </div>
    

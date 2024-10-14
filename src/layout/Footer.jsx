@@ -11,7 +11,7 @@ const Footer = () => {
        >
       <Section
         crosses 
-       className="border px-0 md:px-16 !py-0">
+       className="border border-[#8080809c] px-0 md:px-16 !py-0">
      <div style={{ backgroundImage: `url(${""})` }} 
      >
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-4 sm:pt-16 pt-6

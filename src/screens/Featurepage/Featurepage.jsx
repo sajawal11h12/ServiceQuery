@@ -18,6 +18,7 @@ import Group from '../../assets/images/Group.png';
 import BgVector from '../../assets/images/BgVector.webp';
 import Footer from '../../layout/Footer';
 import ReactPlayer from 'react-player'; // Import ReactPlayer for video embedding
+import ScrollToTop from '../../components/Scrolltotop/Scrolltotop';
 
 const Featurepage = () => {
   const [viewAll, setViewAll] = useState(false); // State for showing all cards
@@ -133,9 +134,9 @@ const Featurepage = () => {
               >
                 <div className="relative z-2 flex flex-col h-[350px] p-[2.4rem] pointer-events-none">
                   <img src={item.iconUrl} alt={`${item.title} icon`} className="w-12 h-12 mb-4" /> {/* Icon */}
-                  <h5 className="text-lg font-bold h5 mb-5">{item.title}</h5>
+                  <h5 className="text-lg tracking-wider font-bold h5 mb-5">{item.title}</h5>
                   
-                  <p className="text-base text-[#ffffffc4] mt-5 body-2  text-n-3">{item.text}</p>
+                  <p className="text-lg  text-[#ffffffc4] mt-5 body-2  text-n-3">{item.text}</p>
                 </div>
                 <ClipPath />
               </div>
@@ -228,7 +229,7 @@ const Featurepage = () => {
     </div>
   </div>
 </div>
-
+<ScrollToTop/>
         <Footer />
       </>
     </section>
