@@ -60,7 +60,7 @@ const Heropage = () => {
         >
           <Lottie
             animationData={headerearth}
-            className="mb-48 mr-40 w-full h-[400px] md:h-[450px] object-cover rounded-lg shadow-lg"
+            className="mb-48 mr-36 w-full h-[400px] md:h-[450px] object-cover rounded-lg shadow-lg"
             loop={true}
             autoplay={true}
           />
