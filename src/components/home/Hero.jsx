@@ -20,20 +20,21 @@ const Heropage = () => {
       <div
         className=" absolute inset-0 opacity-70" // Add Tailwind opacity utility here
         style={{
-          backgroundImage: `url(${BgVector})`,
+          backgroundImage: `     url(${BgVector})`,
           backgroundSize: 'cover',
-          backgroundPosition: '30%'
-          ,
+          backgroundPosition: '30%',
+          
+          
            // Adjust this value to move it down
         }}
       ></div>
       
       <div className="  relative pt-32 flex flex-col md:flex-row items-center justify-center h-full text-white">
         <div 
-          className="mb-64 ml-28 md:w-1/2 flex flex-col mt-12 text-left md:pr-8" 
+          className="mb-64 ml-16 md:w-1/2 flex flex-col mt-12 text-left md:pr-8" 
           data-aos="fade-up" // AOS animation for fade-up
         >
-          <h1 className="text-lg font-bold ml-7 text-gray-50 md:text-6xl lg:text-5xl mb-4">
+          <h1 className="text-lg font-bold ml-9 text-gray-50 md:text-6xl lg:text-5xl mb-4">
             Revolutionize Data Access 
             <span className="gradi-theme-text block text-[#00FFCC] text-6xl lg:text-[50px]">
               with Query Service
