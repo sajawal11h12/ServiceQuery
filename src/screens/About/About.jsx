@@ -136,7 +136,7 @@ const About = () => {
     <img src={holoicon} alt="Holographic Software logo" className="my-2 w-32" />
     <h1>Holographic Software for the Metaverse</h1>
     <p className="font-poppins mt-2 text-white">
-      Our goal is to develop new and innovative technologies to complement an augmented and virtual reality world.
+      Our goal is to develop new and innovative technologies to complement an augmented and virtual reality world
     </p>
     <Button className='mt-5 font-poppins'>Vist our website</Button>
   </div>
