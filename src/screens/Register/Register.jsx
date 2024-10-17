@@ -7,7 +7,7 @@ import ButtonGradient from '../../buttonGrad';
 import { useForm } from 'react-hook-form';
 import Header from '../../layout/Header';
 import Footer from '../../layout/Footer';
-import './styles.css'
+
 
 const Register = () => {
   const {
