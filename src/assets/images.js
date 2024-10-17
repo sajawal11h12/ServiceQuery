@@ -10,7 +10,7 @@ import import_design from "./images/import_design.png";
 import process_map from "./images/process_map.png";
 import scope from "./images/scope.png";
 import sync_tools from "./images/sync_tools.png";
-import user_stories from "./images/user_stories.png";
+import user_stories from "./images/user_stories.jpg";
 
 
 

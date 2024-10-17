@@ -34,13 +34,13 @@ const Heropage = () => {
           className="mb-64 ml-16 md:w-1/2 flex flex-col mt-12 text-left md:pr-8" 
           data-aos="fade-up" // AOS animation for fade-up
         >
-          <h1 className="text-lg font-bold ml-9 text-gray-50 md:text-6xl lg:text-5xl mb-4">
+          <h1 className="font-poppins  text-lg font-bold ml-9 text-gray-50 md:text-6xl lg:text-4xl mb-4">
             Revolutionize Data Access 
-            <span className="gradi-theme-text block text-[#00FFCC] text-6xl lg:text-[50px]">
+            <span className=" font-poppins gradi-theme-text block text-[#00FFCC] text-6xl lg:text-[50px]">
               with Query Service
             </span>
           </h1>
-          <p className="mx-auto lg:max-w-[600px] lg:text-lg md:text-base text-sm text-white my-6 leading-relaxed">
+          <p className="font-poppins mx-auto lg:max-w-[600px] lg:text-lg md:text-base text-sm text-white my-6 leading-relaxed">
             The open-source library for efficient data querying over REST APIs facilitates seamless integration with various SQL and NoSQL databases. It supports polyglot, multi-engine database access, allowing developers to perform secure and flexible queries tailored to their specific needs.
           </p>
           

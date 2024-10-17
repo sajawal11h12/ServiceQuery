@@ -165,18 +165,12 @@ export const FRAMEWORK_DATA = [
   },
   {
     id: "framework_2",
-    image: Images.framework2,
-    title: " Enhanced Security with Built-In Protection",
-    description:
-      "With ServiceQuery, security is paramount. The library eliminates the threat of SQL injection attacks by constructing queries with individually mapped functions, ensuring data protection through secure, pre-validated LINQ expressions. This guarantees secure data operations without compromising performance.",
-  },
-  {
-    id: "framework_3",
     image: Images.framework3,
-    title: "Advanced Dynamic Querying for Front-End Flexibility",
+    title: " Advanced Dynamic Querying for Front-End Flexibility",
     description:
       "ServiceQuery enables powerful dynamic querying, allowing front-end applications to interact with backend data through a standardized API. This feature simplifies data access, providing the agility to build complex queries on the fly, improving operational efficiency and reducing development complexity.",
   },
+ 
   
 ];
 

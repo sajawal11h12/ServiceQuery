@@ -1,12 +1,12 @@
 import routesConstants from "../constants/routeConstants";
-import { Link , useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Icons } from "../assets/icons";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import { useState, useEffect } from "react";
-import Button from "../button";
-import ButtonGradient from "../buttonGrad";
-import { Gradient } from "../Gradient";
+import Button from "../button"; // Ensure you have a Button component
+import ButtonGradient from "../buttonGrad"; // Ensure you have a ButtonGradient component
+import { Gradient } from "../Gradient"; // If used, ensure import is valid
 import headerbg from '../assets/images/headerbg.svg';
 
 const Header = () => {
@@ -36,9 +36,9 @@ const Header = () => {
   return (
     <header className="top-0">
       <div
-        className={`max-w-full px-8 flex items-center justify-between py-[30px] mx-auto h-9 w-full fixed top-0 z-50 transition-all duration-300 ease-in-out ${
-          isScrolled ? 'bg-[#0e0c15e0] shadow-lg py-3' : 'bg-transparent py-6'
-        }`}
+        className={`max-w-full px-8 flex items-center justify-between py-[30px] mx-auto h-9 w-full fixed top-0 z-50 bg-[#09030c67]`}
+       
+        
       >
         <div className="flex items-center gap-x-9">
           <Link
@@ -57,44 +57,63 @@ const Header = () => {
                 <IoMdClose size={32} />
               </button>
             </div>
-            <ul className="flex lg:flex-row lg:items-center xl:gap-x-12 lg:gap-x-10 gap-x-8 flex-col gap-y-5 text-center">
-            <li className="nav-item">
-  <Link
-    to="/"
-    className="ml-80 text-white text-base font-source-sans hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-  >
-    Home
-  </Link>
-</li>
-<li className="nav-item">
-  <Link
-    to={routesConstants.FEATURES}
-    className="text-white text-base font-source-sans hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-  >
-    Features
-  </Link>
-  <Link
-     to={routesConstants.GET_STARTED}
-    className="ml-10 text-white text-base font-source-sans hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-  >
-    Get Started
-  </Link>
-  <Link
-    to=""
-    className="ml-10 text-white text-base font-source-sans hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-  >
-    Documentation
-  </Link>
-  <Link
-    to=""
-    className="ml-10 text-white text-base font-source-sans hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-  >
-    About
-  </Link>
-</li>
+            <ul className="   flex lg:flex-row lg:items-center xl:gap-x-12 lg:gap-x-10 gap-x-8 flex-col gap-y-5 text-center">
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  className=" font-poppins ml-20 text-white text-base  hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to={routesConstants.FEATURES}
+                  className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+                >
+                  Features
+                </Link>
+                <Link
+                  to={routesConstants.GET_STARTED}
+                  className="ml-10 text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+                >
+                  Get Started
+                </Link>
+                <Link
+                  to={routesConstants.CONSULTING}
+                  className="ml-10 text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+                >
+                  Consulting
+                </Link>
+                <Link
+                  to={routesConstants.ABOUT}
+                  className="ml-10 text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+                >
+                  About
+                </Link>
+              </li>
 
+
+ {/* Login and Register Buttons */}
+ <li className="ml-20">
+                
+                <Link to={routesConstants.REGISTER}>
+                  <Button className='text-white'>
+                    Register 
+                    </Button> 
+
+                </Link>
+               
+              </li>
+
+              <Link
+                  to={routesConstants.LOGIN}
+                  className=" text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+                >
+                  Login
+                </Link>
+             
             </ul>
-
           </nav>
         </div>
 
@@ -104,9 +123,8 @@ const Header = () => {
           onClick={toggleNavbar}
         >
           <MdMenu size={32} />
-        </button> 
+        </button>
       </div>
-
     </header>
   );
 };

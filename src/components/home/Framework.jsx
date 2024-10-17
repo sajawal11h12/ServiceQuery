@@ -1,6 +1,9 @@
 import { FRAMEWORK_DATA } from "../../data/mockData";
 import useGradientUpdater from "../../hooks/useGradientUpdater";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import query from "../../assets/images/query.json"; // replace with actual path
+ import database from "../../assets/images/database.json"; // replace with the second animation path
 
 const Framework = () => {
   const gradientRefs = useGradientUpdater();
@@ -8,28 +11,12 @@ const Framework = () => {
   const frameworkGridSettings = [
     {
       cardGradientBefore:
-        "before:content-[''] before:bg-grad-theme-135 before:absolute before:w-[300px] before:h-[300px] before:-top-[25%] before:-right-[5%] before:blur-[30px] before:rounded-full",
-      cardGradientAfter:
-        "after:content-[''] after:bg-grad-theme-135 after:absolute after:w-[270px] after:h-[270px] after:bottom-0 after:right-[35%] after:blur-[30px] after:rounded-full",
+        " ",
     },
     {
       cardGradientBefore:
-        "before:content-[''] before:bg-grad-theme-135 before:absolute before:w-[300px] before:h-[300px] before:-bottom-[10%] before:-right-[5%] before:blur-[30px] before:rounded-full",
-      cardGradientAfter:
-        "after:content-[''] after:bg-grad-theme-135 after:absolute after:w-[270px] after:h-[270px] after:top-0 after:right-[35%] after:blur-[30px] after:rounded-full",
-    },
-    {
-      cardGradientBefore:
-        "before:content-[''] before:bg-grad-theme-135 before:absolute before:w-[300px] before:h-[300px] before:-top-[15%] before:-right-0 before:blur-[30px] before:rounded-full",
-      cardGradientAfter:
-        "after:content-[''] after:bg-grad-theme-135 after:absolute after:w-[270px] after:h-[270px] after:-bottom-[10%] after:left-[52%] after:blur-[30px] after:rounded-full",
-    },
-    {
-      cardGradientBefore:
-        "before:content-[''] before:bg-grad-theme-135 before:absolute before:w-[300px] before:h-[300px] before:-top-[5%] before:right-[20%] before:blur-[30px] before:rounded-full",
-      cardGradientAfter:
-        "after:content-[''] after:bg-grad-theme-135 after:absolute after:w-[270px] after:h-[270px] after:-bottom-[15%] after:-right-[5%] after:blur-[30px] after:rounded-full",
-    },
+        "",
+    }
   ];
 
   return (
@@ -39,11 +26,11 @@ const Framework = () => {
           Transform work practices forever. <br /> Our Framework for the future:
         </h3>
         <div className="grid xxl:gap-y-[30px] xl:gap-y-6 gap-y-4 items-start lg:mt-[65px] mt-10">
-          {FRAMEWORK_DATA?.map(({ id, title, image, description }, index) => {
+          {FRAMEWORK_DATA?.map(({ id, title, description }, index) => {
             return (
               <motion.div
                 key={id}
-                className="bg-grad-theme-135 rounded-3xl p-[3px]"
+                className="bg-transparent rounded-3xl p-[3px] h-full"
                 ref={(el) => (gradientRefs.current[index] = el)}
                 initial={{
                   opacity: 0,
@@ -65,7 +52,7 @@ const Framework = () => {
                   className={`rounded-3xl bg-jet h-full grid items-center md:grid-cols-2 ${
                     FRAMEWORK_DATA?.length - 1 === index
                       ? "lg:ps-10 ps-6"
-                      : "lg:py-12 lg:px-10 py-8 px-6"
+                      : "  px-6"
                   } xxl:gap-20 xl:gap-16 lg:gap-12 gap-10 relative overflow-hidden ${
                     frameworkGridSettings[index].cardGradientBefore
                   } ${frameworkGridSettings[index].cardGradientAfter}`}
@@ -83,25 +70,17 @@ const Framework = () => {
                       {description}
                     </p>
                   </div>
-                  <img className="relative z-10" src={image} alt="" />
+                  <Lottie
+                    animationData={index === 0 ? query : query} // Use different animations based on index
+                    style={{ height: "400px", width: "400px" }} // Adjust dimensions accordingly
+                    className=" z-10 md:order-2"
+                  />
                 </div>
               </motion.div>
             );
           })}
         </div>
       </div>
-
-
-
-
-
-     <section>
-
-
-
-      
-     </section>
-
     </section>
   );
 };

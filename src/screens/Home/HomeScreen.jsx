@@ -20,7 +20,7 @@ const HomeScreen = () => {
       <FeaturesGrid />
       <UpliftDelivery />
       <CollectiveDelivery />
-      <Framework />
+      {/* <Framework /> */}
       <ProcessMap />
       <JoinUs />
       <Footer />

@@ -1,17 +1,17 @@
 import Button from "../../button";
-import BgVector from '../../assets/images/Bg-Vector.webp';
+import stars from '../../assets/images/stars.svg';
 import earth from '../../assets/images/earth.png';
 
 const JoinUs = () => {
   return (
    <section
-  className="py-[30px] lg:py-[50px] min-h-[400px] px-4 text-white relative bg-cover bg-no-repeat bg-center"
-  style={{ backgroundImage: `url(${BgVector})` }}
+  className="py-[30px] lg:py-[50px] min-h-[500px] px-4 text-white relative bg-cover bg-no-repeat bg-center"
+  style={{ backgroundImage: `url(${stars})` }}
 >
   <div className="flex flex-col-reverse lg:flex-row items-center justify-between max-w-[900px] mx-auto text-center relative z-10">
     {/* Left content */}
     <div className="lg:text-left text-center flex-1 lg:pr-8">
-      <h2 className="font-semibold font-montserrat lg:text-[40px] md:text-4xl sm:text-3xl text-lg">
+      <h2 className=" font-poppins lg:text-[30px] md:text-4xl sm:text-3xl text-lg">
         We offer robust sales and consulting services to help your business leverage the full potential of our products.
       </h2>
       <p className="text-xl lg:mt-[44px] md:mt-8 sm:mt-6 mt-4 lg:mb-[46px] md:mb-8 sm:mb-6 mb-4">

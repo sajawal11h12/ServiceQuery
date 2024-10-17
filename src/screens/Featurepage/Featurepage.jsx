@@ -20,6 +20,7 @@ import Footer from '../../layout/Footer';
 import ReactPlayer from 'react-player'; // Import ReactPlayer for video embedding
 import ScrollToTop from '../../components/Scrolltotop/Scrolltotop';
 
+
 const Featurepage = () => {
   const [viewAll, setViewAll] = useState(false); // State for showing all cards
 
@@ -82,7 +83,7 @@ const Featurepage = () => {
           {/* Left side text content */}
           <div className="md:w-1/2 w-full space-y-6 text-center md:text-left" data-aos="fade-right">
             <h4 className="mt-24 ml-9 text-4xl font-bold text-white leading-tight">
-              Defining Qualities <br /><span className="text-2xl text-[#be42be]">That Enhance User Experience</span>
+              Defining Qualities <br /><span className="text-2xl text-purple-800">That Enhance User Experience</span>
             </h4>
             <div className="text-gray-300 space-y-4">
               <p className="mt-12 flex items-center justify-center md:justify-start">
@@ -146,7 +147,7 @@ const Featurepage = () => {
           <div className="flex justify-center mt-10">
             <button 
               onClick={toggleViewAll} 
-              className="px-6 py-3 text-lg font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700"
+              className="px-6 py-3 text-lg font-medium text-white bg-purple-500 rounded-md hover:bg-purple-500"
             >
               {viewAll ? "View Less" : "View All"}
             </button>
