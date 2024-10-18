@@ -25,7 +25,7 @@ const Heropage = () => {
         }}
       ></div>
 
-      <div className="relative lg:pt-32 pt-10 flex flex-col md:flex-row items-center justify-center h-full text-white">
+      <div className="relative lg:pt-20 pt-10 flex flex-col md:flex-row items-center justify-center h-full text-white">
         {/* Lottie animation section, moved to the top for small screens */}
         <div
           className="md:hidden flex justify-center " // Hidden on medium screens and above
@@ -33,7 +33,7 @@ const Heropage = () => {
         >
           <Lottie
             animationData={headerearth}
-            className="w-full lg:h-[250px] h-[250px] lg:mt-0 mt-5 lg:mr-0 mr-10 object-cover rounded-lg shadow-lg" // Adjust height for small screens
+            className="w-full lg:h-[250px] h-[250px] lg:mt-0 mt-5 lg:mr-0 mr-20 object-cover rounded-lg shadow-lg" // Adjust height for small screens
             loop={true}
             autoplay={true}
           />

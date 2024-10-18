@@ -1,15 +1,15 @@
 import React from "react";
-import Section from "../components/home/sectiondesign/Section.jsx";
+
 import secure from "../assets/externalimages/secure.png";
 import {Link} from "react-router-dom"
-import { Icons } from "../assets/icons";
+
 
 const Footer = () => {
   return (
     <div   
     //  className="border-t-2 border-gray-400"
        >
-      <Section
+      <section
         crosses 
        className="border border-[#8080809c] px-0 md:px-16 !py-0">
      <div style={{ backgroundImage: `url(${""})` }} 
@@ -95,7 +95,7 @@ const Footer = () => {
 
         <div className="mx-4">
           <div className="container flex flex-col sm:flex-row sm:justify-between border-t-2 border-gray-500 justify-center items-center gap-5 pt-4">
-            <p className="caption text-n-4 lg:block text-center">
+            <p className="text-white  caption text-n-4 lg:block text-center">
               Copyright Ⓒ 2024 Holo Modular LLC. All Rights Reserved.
             </p>
 
@@ -114,7 +114,7 @@ const Footer = () => {
             </ul> */}
             </div>          </div>
         </div>
-      </Section>
+      </section>
     </div>
   );
 };

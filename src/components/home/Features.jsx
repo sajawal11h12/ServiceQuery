@@ -25,7 +25,7 @@ const Features = () => {
   return (
     <section className="px-4 lg:px-8 py-8 lg:py-[65px]" data-aos="fade-up"> {/* Adjust padding for responsiveness */}
       <div className="max-w-[1200px] mx-auto" data-aos="fade-up">
-        <h3 className="font-poppins text-center text-white text-lg sm:text-xl md:text-2xl font-semibold">
+        <h3 className=" font-poppins text-center text-white text-lg sm:text-xl md:text-2xl font-semibold">
           Why Use ServiceQuery?
         </h3>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 mt-8 lg:mt-[65px]" data-aos="fade-up">
