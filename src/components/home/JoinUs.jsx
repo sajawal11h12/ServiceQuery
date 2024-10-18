@@ -35,7 +35,7 @@ const JoinUs = () => {
         {/* Right content - Earth Image */}
         <div className="flex-1 flex justify-center lg:justify-end lg:max-w-[400px] md:max-w-[300px] w-full mt-6 lg:mt-0">
           <img
-            className="max-w-full h-auto"
+            className="lg:max-w-full max-w-[200px] h-auto"
             src={earth}
             alt="earth"
           />

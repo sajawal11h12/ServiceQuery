@@ -58,7 +58,7 @@ const Header = () => {
               </button>
             </div>
             <ul className="flex flex-col lg:flex-row lg:items-center text-center gap-y-5 lg:gap-x-10 xl:gap-x-12">
-  <li className="nav-item ml-20">
+  <li className="nav-item lg:ml-20 ml-0">
     <Link
       to="/"
       className="font-poppins text-white text-base hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
@@ -104,7 +104,7 @@ const Header = () => {
   </li>
 
   {/* Login and Register Buttons */}
-  <li className="nav-item ml-20">
+  <li className="nav-item lg:ml-20 ml-0">
     <Link to={routesConstants.REGISTER}>
       <Button className='text-white'>
         Register
