@@ -18,18 +18,18 @@ const Getstarted = () => {
         {/* Main Container for Text and Animation */}
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Text Content on the Left */}
-          <div className="md:w-1/2 w-full md:pr-8">
+          <div className="md:w-1/2 w-full md:pr-8 mb-10 md:mb-0">
             {/* Open Source Section */}
             <div className="mt-10">
-              <h2 className="text-5xl font-bold text-white mb-4 font-poppins">Open Source</h2>
-              <p className="text-lg text-white font-poppins">
+              <h2 className="lg:text-5xl text-2xl ml-5 font-bold text-white mb-4 font-poppins">Open Source</h2>
+              <p className="text-lg ml-5  text-white font-poppins">
                 ServiceQuery is open source software and is free to use for commercial purposes. 
                 It is available under the{' '}
                 <a
                   href="https://opensource.org/licenses/MIT"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className= "  font-poppins text-purple-800 underline hover:text-purple-800 transition duration-300 ease-in-out"
+                  className="font-poppins text-purple-800 underline hover:text-purple-800 transition duration-300 ease-in-out"
                 >
                   MIT permissive license
                 </a>.
@@ -38,8 +38,8 @@ const Getstarted = () => {
 
             {/* Example Applications Section */}
             <div className="mt-10">
-              <h2 className=" font-poppins text-5xl font-bold text-white mb-4">Example Applications</h2>
-              <p className="   font-poppins text-lg text-white">
+              <h2 className=" font-poppins lg:text-5xl text-2xl ml-5 font-bold text-white mb-4">Example Applications</h2>
+              <p className="font-poppins lg:text-lg ml-5 text-white">
                 Explore all of our example applications. We have provided examples supporting 
                 the most popular database engines, such as SqlServer, MongoDB, Azure Data Tables, 
                 Cosmos, Sqlite, PostgreSQL, and more!{' '}
@@ -53,16 +53,18 @@ const Getstarted = () => {
                 </a>{' '}
                 to view them all.
               </p>
-              <Button className=' text-white flex mt-7 ml-32'>View Github Repo</Button>
+        
+              <Button  className="text-white mt-10 px-3 py-1 text-sm md:text-base lg:px-6 lg:py-3 lg:text-lg ml-5">View Github Repo</Button>
               <ButtonGradient />
+              
             </div>
           </div>
           
-          {/* Lottie Animation on the Right with Overlay */}
-          <div className="md:w-1/2 w-full flex justify-center md:justify-end mt-10 md:mt-0 relative">
+                {/* Lottie Animation on the Right with Overlay */}
+                <div className="md:w-1/2 w-full flex justify-center md:justify-end relative">
             <Lottie
               animationData={getstarted}
-              className="md:h-[400px] object-cover rounded-lg"
+              className="md:h-[400px] w-full object-cover rounded-lg"
               loop={true}
               autoplay={true}
             />
@@ -77,7 +79,7 @@ const Getstarted = () => {
 
         {/* Code Coverage Statistics */}
         <div className="mt-16 flex flex-col items-center">
-          <h2 className="text-4xl font-bold text-white mb-8 font-poppins">Code Coverage Statistics</h2>
+          <h2 className="lg:text-4xl text-2xl font-bold text-white mb-8 font-poppins">Code Coverage Statistics</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {/* First Statistic Card */}
             <div className="bg-white bg-opacity-10 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
@@ -122,12 +124,12 @@ const Getstarted = () => {
               <img src={check} alt="Check Icon" className="w-6 h-6 mr-2" />
               <p className="text-lg text-white font-poppins">Get started quickly with detailed setup instructions and examples available in our repository.</p>
             </div>
-            <Button className='text-white font-poppins'>View ServiceQuery.openAI</Button>
+           
+            <Button  className="text-white mt-10 px-3 py-1 text-sm md:text-base lg:px-6 lg:py-3 lg:text-lg">View ServiceQuery.openAI</Button>
           </div>
-
-          {/* Image on the Right with Border */}
-          <div className="md:w-1/2 w-full flex justify-center mt-10 md:mt-0">
-            <div className="border-4 border-purple-800 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 ml-16">
+  {/* Image on the Right with Border */}
+  <div className="md:w-1/2 w-full flex justify-center mt-10 md:mt-0">
+            <div className="border-2 border-purple-800 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 ml-16">
               <img
                 src={getstartedai}
                 alt="AI Querying"
@@ -135,6 +137,7 @@ const Getstarted = () => {
               />
             </div>
           </div>
+         
         </div>
       </section>
 

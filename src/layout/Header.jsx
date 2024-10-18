@@ -57,72 +57,80 @@ const Header = () => {
                 <IoMdClose size={32} />
               </button>
             </div>
-            <ul className="   flex lg:flex-row lg:items-center xl:gap-x-12 lg:gap-x-10 gap-x-8 flex-col gap-y-5 text-center">
-              <li className="nav-item">
-                <Link
-                  to="/"
-                  className=" font-poppins ml-20 text-white text-base  hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to={routesConstants.FEATURES}
-                  className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-                >
-                  Features
-                </Link>
-                <Link
-                  to={routesConstants.GET_STARTED}
-                  className="ml-10 text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  to={routesConstants.CONSULTING}
-                  className="ml-10 text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-                >
-                  Consulting
-                </Link>
-                <Link
-                  to={routesConstants.ABOUT}
-                  className="ml-10 text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-                >
-                  About
-                </Link>
-              </li>
+            <ul className="flex flex-col lg:flex-row lg:items-center text-center gap-y-5 lg:gap-x-10 xl:gap-x-12">
+  <li className="nav-item ml-20">
+    <Link
+      to="/"
+      className="font-poppins text-white text-base hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+    >
+      Home
+    </Link>
+  </li>
 
+  <li className="nav-item">
+    <Link
+      to={routesConstants.FEATURES}
+      className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+    >
+      Features
+    </Link>
+  </li>
 
- {/* Login and Register Buttons */}
- <li className="ml-20">
-                
-                <Link to={routesConstants.REGISTER}>
-                  <Button className='text-white'>
-                    Register 
-                    </Button> 
+  <li className="nav-item">
+    <Link
+      to={routesConstants.GET_STARTED}
+      className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+    >
+      Get Started
+    </Link>
+  </li>
 
-                </Link>
-               
-              </li>
+  <li className="nav-item">
+    <Link
+      to={routesConstants.CONSULTING}
+      className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+    >
+      Consulting
+    </Link>
+  </li>
 
-              <Link
-                  to={routesConstants.LOGIN}
-                  className=" text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
-                >
-                  Login
-                </Link>
-             
-            </ul>
+  <li className="nav-item">
+    <Link
+      to={routesConstants.ABOUT}
+      className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+    >
+      About
+    </Link>
+  </li>
+
+  {/* Login and Register Buttons */}
+  <li className="nav-item ml-20">
+    <Link to={routesConstants.REGISTER}>
+      <Button className='text-white'>
+        Register
+      </Button>
+    </Link>
+  </li>
+
+  <li className="nav-item">
+    <Link
+      to={routesConstants.LOGIN}
+      className="text-white text-base font-poppins hover:opacity-90 transition-transform transform hover:scale-105 duration-300 ease-in-out border-b-2 border-transparent hover:border-purple-500 font-normal whitespace-nowrap"
+    >
+      Login
+    </Link>
+  </li>
+</ul>
+
           </nav>
         </div>
 
         <button
           type="button"
-          className="lg:hidden hover:opacity-80 duration-300 ease-in-out translate-all"
+          className=" lg:hidden hover:opacity-80 duration-300 ease-in-out translate-all"
           onClick={toggleNavbar}
         >
-          <MdMenu size={32} />
+          <MdMenu size={32} color="white" />
         </button>
       </div>
     </header>

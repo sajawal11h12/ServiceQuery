@@ -34,9 +34,9 @@ const Heropage = () => {
           className="mb-64 ml-16 md:w-1/2 flex flex-col mt-12 text-left md:pr-8" 
           data-aos="fade-up" // AOS animation for fade-up
         >
-          <h1 className="font-poppins  text-lg font-bold ml-9 text-gray-50 md:text-6xl lg:text-4xl mb-4">
+          <h1 className="font-poppins  text-lg font-bold ml-9 text-gray-50    md:text-6xl lg:text-4xl mb-4">
             Revolutionize Data Access 
-            <span className=" font-poppins gradi-theme-text block text-[#00FFCC] text-6xl lg:text-[50px]">
+            <span className=" font-poppins gradi-theme-text block text-[#00FFCC]   sm:text-[20px]  md:text-[300px]  text-5xl lg:text-[50px]">
               with Query Service
             </span>
           </h1>

@@ -129,29 +129,30 @@ const About = () => {
       </div>
 
     
-      <div className="flex justify-between items-start p-6  rounded-lg shadow-lg">
+      <div className="flex flex-col md:flex-row justify-between items-start p-6 rounded-lg shadow-lg space-y-6 md:space-y-0 md:space-x-6">
   {/* Left Section */}
-  <div className="flex flex-col items-start w-[800px] p-4  rounded-lg border border-gray-500 shadow-md hover:shadow-lg transition-shadow duration-300">
-    <h1 className="text-xl font-bold text-purple-800 font-poppins ">Owned and Maintained by:</h1>
+  <div className="flex flex-col items-start w-full md:w-[60%] p-4 rounded-lg border border-gray-500 shadow-md hover:shadow-lg transition-shadow duration-300">
+    <h1 className="text-xl md:text-2xl font-bold text-purple-800 font-poppins">
+      Owned and Maintained by:
+    </h1>
     <img src={holoicon} alt="Holographic Software logo" className="my-2 w-32" />
-    <h1>Holographic Software for the Metaverse</h1>
+    <h1 className="text-lg md:text-xl">Holographic Software for the Metaverse</h1>
     <p className="font-poppins mt-2 text-white">
-      Our goal is to develop new and innovative technologies to complement an augmented and virtual reality world
+      Our goal is to develop new and innovative technologies to complement an augmented and virtual reality world.
     </p>
-    <Button className='mt-5 font-poppins'>Vist our website</Button>
+    <Button className='mt-5 font-poppins'>Visit our website</Button>
   </div>
-<ButtonGradient/>
-  {/* Right Section */}
-  <div className="flex flex-col items-start w-1/3 p-5  rounded-lg border border-gray-500 shadow-md hover:shadow-lg transition-shadow duration-300">
 
+  {/* Right Section */}
+  <div className="flex flex-col items-start w-full md:w-[35%] p-5 rounded-lg border border-gray-500 shadow-md hover:shadow-lg transition-shadow duration-300">
     <h1 className="text-2xl font-bold text-purple-800 font-poppins">Open Source Software</h1>
     <img src={mit} alt="MIT license logo" className="mt-2 w-32" />
     <p className="mt-2 text-white font-poppins">
       ServiceQuery is FREE, open-source, enterprise-grade software that enables developers to query databases easily. It is available under the MIT permissive software license.
     </p>
-   
   </div>
 </div>
+
 
 
 

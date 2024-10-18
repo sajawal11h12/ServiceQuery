@@ -80,45 +80,47 @@ const Featurepage = () => {
       <>
         {/* Main content section */}
         <div className="max-w-10xl mx-auto flex flex-col md:flex-row items-center justify-center p-10 gap-10">
-          {/* Left side text content */}
-          <div className="md:w-1/2 w-full space-y-6 text-center md:text-left" data-aos="fade-right">
-            <h4 className="mt-24 ml-9 text-4xl font-bold text-white leading-tight">
-              Defining Qualities <br /><span className="text-2xl text-purple-800">That Enhance User Experience</span>
-            </h4>
-            <div className="text-gray-300 space-y-4">
-              <p className="mt-12 flex items-center justify-center md:justify-start">
-                <img src={check} alt="Check Icon" className="mr-3 w-6 h-6" /> {/* Check icon image */}
-                <span className="text-lg relative inline-block">
-                  ServiceQuery simplifies data querying over REST APIs, supporting a variety of SQL and NoSQL databases while ensuring security against injection attacks.
-                  <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
-                </span>
-              </p>
-              <div className="w-full border-b border-gray-700" />
+  {/* Left side text content */}
+  <div className="md:w-1/2 w-full space-y-6 text-center md:text-left" data-aos="fade-right">
+    <h4 className="  text-start mt-24 ml-9 text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
+      Defining Qualities <br />
+      Enhance User Experience
+    </h4>
+    <div className="text-gray-300 space-y-4">
+      <p className="mt-12 flex items-center justify-center md:justify-start">
+        <img src={check} alt="Check Icon" className="mr-3 w-6 h-6" />
+        <span className="text-justify sm:text-base lg:text-lg relative inline-block">
+          ServiceQuery simplifies data querying over REST APIs, supporting a variety of SQL and NoSQL databases while ensuring security against injection attacks.
+          <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+        </span>
+      </p>
+      <div className="w-full border-b border-gray-700" />
 
-              <p className="flex items-center justify-center md:justify-start">
-                <img src={check} alt="Check Icon" className="mr-3 w-6 h-6" /> {/* Check icon image */}
-                <span className="text-lg relative inline-block">
-                  The library provides powerful querying capabilities, including aggregate functions and advanced comparisons, along with comprehensive documentation for easy integration across applications.
-                  <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
-                </span>
-              </p>
-              <div className="w-full border-b border-gray-700" />
-            </div>
-            <div className="flex justify-center">
-              <Button>Get Started</Button>
-            </div>
-          </div>
+      <p className="flex items-center justify-center md:justify-start">
+        <img src={check} alt="Check Icon" className="mr-3 w-6 h-6" />
+        <span className=" text-justify  sm:text-base lg:text-lg relative inline-block">
+          The library provides powerful querying capabilities, including aggregate functions and advanced comparisons, along with comprehensive documentation for easy integration across applications.
+          <span className="absolute left-0 bottom-0 h-1 w-full bg-purple-500 transition-all duration-300 transform scale-x-0 origin-left hover:scale-x-100"></span>
+        </span>
+      </p>
+      <div className="w-full border-b border-gray-700" />
+    </div>
+    <div className="flex justify-center">
+      <Button>Get Started</Button>
+    </div>
+  </div>
 
-          {/* Right side Lottie animation content */}
-          <div className="md:w-2/3 w-full flex justify-center md:justify-end" data-aos="fade-left">
-            <Lottie
-              animationData={featureanimation}
-              className="mt-20 w-full h-[300px] md:h-[400px] object-cover rounded-lg shadow-lg"
-              loop={true}
-              autoplay={true}
-            />
-          </div>
-        </div>
+  {/* Right side Lottie animation content */}
+  <div className="md:w-2/3 w-full  justify-center md:justify-end hidden md:flex order-2" data-aos="fade-left">
+    <Lottie
+      animationData={featureanimation}
+      className="mt-20 w-full h-[300px] md:h-[400px] object-cover rounded-lg shadow-lg"
+      loop={true}
+      autoplay={true}
+    />
+  </div>
+</div>
+
 
         {/* Benefits Section */}
         <div className="container mx-auto">
@@ -156,50 +158,52 @@ const Featurepage = () => {
 
         <ButtonGradient />
 
-        {/* Case Studies Section */}
-        <section className="relative border mt-6 border-[#9c9a9a38] rounded-lg shadow-xl flex items-center justify-between h-screen p-5" data-aos="fade-up">
-          <div className="absolute inset-0">
-            <img src={BgVector} alt="Background Vector" className="w-full h-full object-cover opacity-20" />
-          </div>
+    {/* Case Studies Section */}
+<section className="relative border mt-6 border-[#9c9a9a38] rounded-lg shadow-xl flex flex-col md:flex-row items-center justify-between min-h-screen p-5" data-aos="fade-up">
+  <div className="absolute inset-0">
+    <img src={BgVector} alt="Background Vector" className="w-full h-full object-cover opacity-20" />
+  </div>
 
-          <div className="relative z-10 w-1/2">
-            <h1 className="text-4xl font-bold text-white mb-4">Explore Our Case Studies</h1>
-            <p className="text-lg text-gray-300 mb-6">
-              We have developed case studies utilizing leading database storage providers. Discover how straightforward it is to begin querying your data effectively!
-            </p>
-            <Button>Explore Now</Button>
-          </div>
+  {/* Image Section */}
+  <div className="relative z-10 w-full md:w-1/2 mb-4 md:mb-0">
+    <img src={Group} alt="Case Studies" className="w-full h-auto object-cover rounded-lg shadow-lg" />
+  </div>
 
-          <div className="relative z-10 w-1/2">
-            <img src={Group} alt="Case Studies" className="w-full h-auto object-cover rounded-lg shadow-lg" />
-          </div>
-        </section>
+  {/* Text Section */}
+  <div className="relative z-10 w-full md:w-1/2">
+    <h1 className="text-4xl font-bold text-white mb-4">Explore Our Case Studies</h1>
+    <p className="text-lg text-gray-300 mb-6">
+      We have developed case studies utilizing leading database storage providers. Discover how straightforward it is to begin querying your data effectively!
+    </p>
+    <Button>Explore Now</Button>
+  </div>
+</section>
 
-        {/* Query Operations Section */}
-        <div className="container mx-auto mt-20">
-          <h2 className="text-center text-4xl font-bold white mb-8" data-aos="fade-up">Query Operations</h2>
-          <p className="text-center text-gray-500 text-base mb-10" data-aos="fade-up" data-aos-delay="100">
-            Note: Not all database providers support all operations or data types. View our documentation for each provider to know what is available.
-          </p>
+{/* Query Operations Section */}
+<div className="container mx-auto lg:mt-20 mt-10"> {/* Add margin-top here */}
+  <h2 className="text-center text-4xl font-bold text-white mb-8" data-aos="fade-up">Query Operations</h2>
+  <p className="text-center text-gray-500 text-base mb-10" data-aos="fade-up" data-aos-delay="100">
+    Note: Not all database providers support all operations or data types. View our documentation for each provider to know what is available.
+  </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {operationsData.map((group, index) => (
-              <div
-                key={index}
-                className="bg-gradient-to-br from-[#6e4b8a3a] to-[#7f63b42a] p-6 rounded-lg shadow-md"
-                data-aos="fade-up"
-                data-aos-delay={100 * index}
-              >
-                <h3 className="text-xl font-bold mb-4">{group.category}</h3>
-                <ul className="list-disc ml-6 text-[#ffffffc4]">
-                  {group.operations.map((op, idx) => (
-                    <li key={idx}>{op}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    {operationsData.map((group, index) => (
+      <div
+        key={index}
+        className="bg-gradient-to-br from-[#6e4b8a3a] to-[#7f63b42a] p-6 rounded-lg shadow-md"
+        data-aos="fade-up"
+        data-aos-delay={100 * index}
+      >
+        <h3 className="text-xl font-bold mb-4">{group.category}</h3>
+        <ul className="list-disc ml-6 text-[#ffffffc4]">
+          {group.operations.map((op, idx) => (
+            <li key={idx}>{op}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</div>
 
          {/* Video Section */}
          <div className="mb-36 container mx-auto mt-24 px-6" data-aos="fade-up">
