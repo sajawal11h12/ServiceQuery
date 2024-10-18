@@ -25,7 +25,7 @@ const Heropage = () => {
         }}
       ></div>
 
-      <div className="relative lg:pt-20 pt-10 flex flex-col md:flex-row items-center justify-center h-full text-white">
+      <div className="relative lg:pt-20 pt-80 flex flex-col md:flex-row items-center justify-center h-[700px] lg:h-full text-white">
         {/* Lottie animation section, moved to the top for small screens */}
         <div
           className="md:hidden flex justify-center " // Hidden on medium screens and above
