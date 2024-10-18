@@ -45,7 +45,7 @@ const Header = () => {
             to={routesConstants.ROOT}
             className="max-w-[120px] lg:max-w-[300px] md:max-w-[140px]"
           >
-            <img src={Icons.logo} alt="site logo" />
+            <img className="h-6 w-[300px]" src={Icons.logo} alt="site logo" />
           </Link>
           <nav
             className={`lg:relative lg:right-auto lg:top-auto lg:bg-transparent lg:p-0 fixed right-0 top-0 bg-errie-black h-full z-50 p-5 sm:w-[300px] w-full translate-alls ease-in-out duration-300 shadow-navbar lg:shadow-none lg:translate-x-0 ${
@@ -54,7 +54,7 @@ const Header = () => {
           >
             <div className="flex justify-end mb-10 lg:hidden hover:opacity-80 transition-all duration-300 ease-in-out">
               <button type="button" onClick={toggleNavbar}>
-                <IoMdClose size={32} />
+                <IoMdClose size={32}  color="white"/>
               </button>
             </div>
             <ul className="flex flex-col lg:flex-row lg:items-center text-center gap-y-5 lg:gap-x-10 xl:gap-x-12">

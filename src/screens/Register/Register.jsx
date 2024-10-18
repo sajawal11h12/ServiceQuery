@@ -7,6 +7,8 @@ import ButtonGradient from '../../buttonGrad';
 import { useForm } from 'react-hook-form';
 import Header from '../../layout/Header';
 import Footer from '../../layout/Footer';
+import './Register.css'
+import ScrollToTop from '../../components/Scrolltotop/Scrolltotop';
 
 
 const Register = () => {
@@ -146,6 +148,7 @@ const Register = () => {
       </div>
       <ButtonGradient />
       <Footer />
+      <ScrollToTop/>
     </>
   );
 };
