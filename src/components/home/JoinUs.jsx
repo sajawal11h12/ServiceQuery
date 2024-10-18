@@ -1,5 +1,5 @@
 import Button from "../../button";
-import stars from '../../assets/images/stars.svg';
+import stars from '../../assets/images/stars.png';
 import earth from '../../assets/images/earth.png';
 
 const JoinUs = () => {

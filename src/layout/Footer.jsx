@@ -1,6 +1,6 @@
 import React from "react";
 
-import secure from "../assets/externalimages/secure.png";
+import minilogo from "../assets/externalimages/minilogo.png";
 import {Link} from "react-router-dom"
 
 
@@ -19,7 +19,7 @@ const Footer = () => {
         >
           <div className="flex flex-col items-start mb-8">
             <img
-              src={secure}
+              src={minilogo}
               alt="hoobank"
               className="h-20 flex self-center object-contain"
             />
