@@ -41,7 +41,7 @@ const Register = () => {
             />
             <h2 className="text-2xl md:text-3xl font-bold text-white mt-6">Empower Your Services</h2>
             <p className="text-white mt-4 text-center leading-relaxed">
-              ServiceBricks ensures top-level security and privacy for your data. We will never share or sell your personal information.
+              ServiceQuery ensures top-level security and privacy for your data. We will never share or sell your personal information.
             </p>
           </div>
 

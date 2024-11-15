@@ -41,7 +41,7 @@ const Heropage = () => {
         </div>
 
         <div 
-          className="mb-64 lg:ml-16 mr-20 lg:mr-0 md:w-1/2 flex flex-col mt-12 text-left md:pr-8" 
+          className=" mb-64 lg:ml-16 mr-20 lg:mr-0 md:w-1/2 flex flex-col mt-12 text-left md:pr-8" 
           data-aos="fade-up"
         >
           <h1 className=" font-poppins text-xl font-bold lg:ml-9 ml-10 text-gray-50 md:text-6xl lg:text-4xl mb-4">

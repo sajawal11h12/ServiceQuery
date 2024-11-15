@@ -21,7 +21,7 @@ const Footer = () => {
             <img
               src={minilogo}
               alt="hoobank"
-              className="h-20 flex self-center object-contain"
+              className="h-16 flex self-center object-contain"
             />
             <p className="text-gray-300 mt-3 mx-0 max-w-[312px] text-center">
               A new way to make the micro service reliable and secure.
@@ -34,15 +34,13 @@ const Footer = () => {
             </h4>
             <ul className="list-none mt-4">
                 <li  className="font-poppins font-normal text-[16px] leading-[24px] text-gray-300 hover:text-color-1 cursor-pointer mb-4 text-center" to="">
-    <Link to="/documentation">            Documentation</Link>
+    <Link to="/documentation">            Consulting</Link>
                 </li>
                 <li  className="font-poppins font-normal text-[16px] leading-[24px] text-gray-300 hover:text-color-1 cursor-pointer mb-4 text-center" to="">
    <Link to="/getstarted">             Get Started
 </Link>                </li>
                 
-                <li  className="font-poppins font-normal text-[16px] leading-[24px] text-gray-300 hover:text-color-1 cursor-pointer mb-4 text-center" to="">
- <Link to="/price">               Pricing
-  </Link>              </li>
+              
                 <li  className="font-poppins font-normal text-[16px] leading-[24px] text-gray-300 hover:text-color-1 cursor-pointer mb-4 text-center" to="">
  <Link to="/features">               Features
  </Link>               </li>
