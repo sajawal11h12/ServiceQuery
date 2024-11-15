@@ -36,15 +36,7 @@ const Consulting = () => {
 
             {/* Description */}
             <p className="font-poppins text-center mt-4 max-w-3xl md:max-w-5xl text-white text-sm md:text-base">
-              Our expert consultants work closely with your team to understand
-              your unique challenges and goals, providing tailored solutions that
-              streamline development, enhance scalability, and improve overall
-              efficiency. We can provide the expertise and support you need for
-              your project. We guide you through best practices, architectural
-              design, and implementation strategies, ensuring a seamless
-              transition and long-term success. Partner with us and discover how
-              ServiceQuery can transform your approach to software development,
-              driving innovation and business growth.
+             
             </p>
 
             <div className="flex flex-col lg:flex-row items-center justify-between mt-10 md:mt-16 space-y-10 lg:space-y-0">
